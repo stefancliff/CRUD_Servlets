@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <link rel="stylesheet" href="index.css">
+<title>ITWS Midterm 2 Stefan Cliff</title>
+</head>
+<body>
+
+<ul>
+	<li><a href='ViewStudentServlet'>View All Students</a></li>
+	<li><a href='ViewProfessorServlet'>View All Professors</a></li>
+	<li><a href='ViewCoursesServlet'>View All Courses</a></li>
+</ul>
+
+
+<br/>
+<h1>Add New Student</h1>  
+<form action="SaveStudentServlet" method="post">  
+<table>  
+	<tr><td>First Name:</td><td><input type="text" name="StudentFName"/></td></tr>  
+	<tr><td>Last Name:</td><td><input type="text" name="StudentLName"/></td></tr>  
+	<tr><td>Email:</td><td><input type="email" name="StudentEmail"/></td></tr>  
+	<tr><td>Select your Course:</td><td>  
+	<select name="StudentCourse" style="width:150px">  
+		<option>SDE</option>  
+		<option>IT</option>  
+		<option>Management</option>  
+		<option>Sports</option>  
+		<option>Mathematics</option>  
+		 
+	</select>  
+	</td></tr>  
+	<tr><td colspan="2"><input type="submit" value="Save Student"/></td></tr>  
+</table>  
+</form>  
+
+
+
+<h1>Add New Professor</h1>  
+<form action="SaveProfessorServlet" method="post">  
+<table>  
+	<tr><td>First Name:</td><td><input type="text" name="ProfessorFName"/></td></tr>  
+	<tr><td>Last Name:</td><td><input type="text" name="ProfessorLName"/></td></tr>  
+	<tr><td>Email:</td><td><input type="email" name="ProfessorEmail"/></td></tr>  
+	<tr><td>Select your Course:</td><td>  
+	<select name="ProfessorCourse" style="width:150px" >  
+		<option>SDE</option>  
+		<option>IT</option>  
+		<option>Management</option>  
+		<option>Sports</option>  
+		<option>Mathematics</option>  
+	</select>  
+</td></tr>  
+<tr><td colspan="2"><input type="submit" value="Save Professor"/></td></tr>  
+</table>  
+</form>  
+
+
+
+
+</body>
+</html>
